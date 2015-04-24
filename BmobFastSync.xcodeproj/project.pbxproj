@@ -11,9 +11,10 @@
 		CB4598EA1AEA51FF0043A978 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4598E91AEA51FF0043A978 /* News.swift */; };
 		CB4598EC1AEA51FF0043A978 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4598EB1AEA51FF0043A978 /* Company.swift */; };
 		CB4598F11AEA52350043A978 /* SwiftCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4598F01AEA52350043A978 /* SwiftCoreDataHelper.m */; };
+		CB4598F41AEA538F0043A978 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4598F31AEA538F0043A978 /* ListTableViewController.swift */; };
+		CB4598F61AEA53A80043A978 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4598F51AEA53A80043A978 /* ListTableViewCell.swift */; };
 		CB8BD50E1AEA3107006CB90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8BD50D1AEA3107006CB90D /* AppDelegate.swift */; };
 		CB8BD5111AEA3107006CB90D /* BmobFastSync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB8BD50F1AEA3107006CB90D /* BmobFastSync.xcdatamodeld */; };
-		CB8BD5131AEA3107006CB90D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8BD5121AEA3107006CB90D /* ViewController.swift */; };
 		CB8BD5161AEA3107006CB90D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8BD5141AEA3107006CB90D /* Main.storyboard */; };
 		CB8BD5181AEA3107006CB90D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8BD5171AEA3107006CB90D /* Images.xcassets */; };
 		CB8BD51B1AEA3107006CB90D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB8BD5191AEA3107006CB90D /* LaunchScreen.xib */; };
@@ -37,11 +38,12 @@
 		CB4598EE1AEA52340043A978 /* BmobFastSync-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BmobFastSync-Bridging-Header.h"; sourceTree = "<group>"; };
 		CB4598EF1AEA52350043A978 /* SwiftCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftCoreDataHelper.h; sourceTree = "<group>"; };
 		CB4598F01AEA52350043A978 /* SwiftCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftCoreDataHelper.m; sourceTree = "<group>"; };
+		CB4598F31AEA538F0043A978 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		CB4598F51AEA53A80043A978 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		CB8BD5081AEA3107006CB90D /* BmobFastSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BmobFastSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8BD50C1AEA3107006CB90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB8BD50D1AEA3107006CB90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB8BD5101AEA3107006CB90D /* BmobFastSync.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BmobFastSync.xcdatamodel; sourceTree = "<group>"; };
-		CB8BD5121AEA3107006CB90D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB8BD5151AEA3107006CB90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB8BD5171AEA3107006CB90D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB8BD51A1AEA3107006CB90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -110,7 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				CB8BD50D1AEA3107006CB90D /* AppDelegate.swift */,
-				CB8BD5121AEA3107006CB90D /* ViewController.swift */,
+				CB4598F31AEA538F0043A978 /* ListTableViewController.swift */,
+				CB4598F51AEA53A80043A978 /* ListTableViewCell.swift */,
 				CB4598F21AEA523B0043A978 /* Helper Class */,
 				CB8BD5141AEA3107006CB90D /* Main.storyboard */,
 				CB8BD5171AEA3107006CB90D /* Images.xcassets */,
@@ -248,12 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB4598E81AEA51FE0043A978 /* User.swift in Sources */,
-				CB8BD5131AEA3107006CB90D /* ViewController.swift in Sources */,
+				CB4598F61AEA53A80043A978 /* ListTableViewCell.swift in Sources */,
 				CB8BD5111AEA3107006CB90D /* BmobFastSync.xcdatamodeld in Sources */,
 				CB4598EA1AEA51FF0043A978 /* News.swift in Sources */,
 				CB8BD50E1AEA3107006CB90D /* AppDelegate.swift in Sources */,
 				CB4598F11AEA52350043A978 /* SwiftCoreDataHelper.m in Sources */,
 				CB4598EC1AEA51FF0043A978 /* Company.swift in Sources */,
+				CB4598F41AEA538F0043A978 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
