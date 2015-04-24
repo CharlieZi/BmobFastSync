@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB4598E81AEA51FE0043A978 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4598E71AEA51FE0043A978 /* User.swift */; };
+		CB4598EA1AEA51FF0043A978 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4598E91AEA51FF0043A978 /* News.swift */; };
+		CB4598EC1AEA51FF0043A978 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4598EB1AEA51FF0043A978 /* Company.swift */; };
+		CB4598F11AEA52350043A978 /* SwiftCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4598F01AEA52350043A978 /* SwiftCoreDataHelper.m */; };
 		CB8BD50E1AEA3107006CB90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8BD50D1AEA3107006CB90D /* AppDelegate.swift */; };
 		CB8BD5111AEA3107006CB90D /* BmobFastSync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB8BD50F1AEA3107006CB90D /* BmobFastSync.xcdatamodeld */; };
 		CB8BD5131AEA3107006CB90D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8BD5121AEA3107006CB90D /* ViewController.swift */; };
@@ -27,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB4598E71AEA51FE0043A978 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
+		CB4598E91AEA51FF0043A978 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = News.swift; path = ../News.swift; sourceTree = "<group>"; };
+		CB4598EB1AEA51FF0043A978 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = ../Company.swift; sourceTree = "<group>"; };
+		CB4598EE1AEA52340043A978 /* BmobFastSync-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BmobFastSync-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB4598EF1AEA52350043A978 /* SwiftCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftCoreDataHelper.h; sourceTree = "<group>"; };
+		CB4598F01AEA52350043A978 /* SwiftCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftCoreDataHelper.m; sourceTree = "<group>"; };
 		CB8BD5081AEA3107006CB90D /* BmobFastSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BmobFastSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8BD50C1AEA3107006CB90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB8BD50D1AEA3107006CB90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +68,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB4598ED1AEA52100043A978 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB4598EB1AEA51FF0043A978 /* Company.swift */,
+				CB4598E91AEA51FF0043A978 /* News.swift */,
+				CB4598E71AEA51FE0043A978 /* User.swift */,
+				CB8BD50F1AEA3107006CB90D /* BmobFastSync.xcdatamodeld */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		CB4598F21AEA523B0043A978 /* Helper Class */ = {
+			isa = PBXGroup;
+			children = (
+				CB4598EF1AEA52350043A978 /* SwiftCoreDataHelper.h */,
+				CB4598F01AEA52350043A978 /* SwiftCoreDataHelper.m */,
+			);
+			name = "Helper Class";
+			sourceTree = "<group>";
+		};
 		CB8BD4FF1AEA3107006CB90D = {
 			isa = PBXGroup;
 			children = (
@@ -81,11 +111,13 @@
 			children = (
 				CB8BD50D1AEA3107006CB90D /* AppDelegate.swift */,
 				CB8BD5121AEA3107006CB90D /* ViewController.swift */,
+				CB4598F21AEA523B0043A978 /* Helper Class */,
 				CB8BD5141AEA3107006CB90D /* Main.storyboard */,
 				CB8BD5171AEA3107006CB90D /* Images.xcassets */,
 				CB8BD5191AEA3107006CB90D /* LaunchScreen.xib */,
-				CB8BD50F1AEA3107006CB90D /* BmobFastSync.xcdatamodeld */,
+				CB4598ED1AEA52100043A978 /* Data Model */,
 				CB8BD50B1AEA3107006CB90D /* Supporting Files */,
+				CB4598EE1AEA52340043A978 /* BmobFastSync-Bridging-Header.h */,
 			);
 			path = BmobFastSync;
 			sourceTree = "<group>";
@@ -215,9 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4598E81AEA51FE0043A978 /* User.swift in Sources */,
 				CB8BD5131AEA3107006CB90D /* ViewController.swift in Sources */,
 				CB8BD5111AEA3107006CB90D /* BmobFastSync.xcdatamodeld in Sources */,
+				CB4598EA1AEA51FF0043A978 /* News.swift in Sources */,
 				CB8BD50E1AEA3107006CB90D /* AppDelegate.swift in Sources */,
+				CB4598F11AEA52350043A978 /* SwiftCoreDataHelper.m in Sources */,
+				CB4598EC1AEA51FF0043A978 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +380,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BmobFastSync/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BmobFastSync/BmobFastSync-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,9 +393,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BmobFastSync/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BmobFastSync/BmobFastSync-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -413,6 +454,7 @@
 				CB8BD52C1AEA3107006CB90D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB8BD52D1AEA3107006CB90D /* Build configuration list for PBXNativeTarget "BmobFastSyncTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +463,7 @@
 				CB8BD52F1AEA3107006CB90D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
